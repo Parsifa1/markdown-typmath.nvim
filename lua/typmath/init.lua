@@ -38,7 +38,6 @@ function M.convert()
                 for _, dot in pairs(pos) do
                     local x, y = dot[1] - 1, dot[2]
                     vim.api.nvim_buf_set_text(0, current_line - 1, x, current_line - 1, y, { ans })
-                    print(x, y, current_line)
                 end
             end
         end
